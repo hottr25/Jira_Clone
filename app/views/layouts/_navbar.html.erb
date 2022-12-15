@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to "Jira Clone", root_path, class:'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "Goals", goal_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Backlog", backlog_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Roadmap", roadmap_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Team", team_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Board", board_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Support", support_path, class:'nav-link' %>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <%= render "user/session_manager" %>
+      </ul>
+    </div>
+  </div>
+</nav>
